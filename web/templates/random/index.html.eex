@@ -1,0 +1,28 @@
+<h2>Random</h2>
+
+<%= form_for @conn, random_path(@conn, :random), [name: :session], fn f -> %>
+  <div class="form-group">
+    <label>Grupo1</label>
+    <%= text_input f, :grupo1, class: "form-control" %>
+  </div>
+
+  <div class="form-group">
+    <label>Grupo2</label>
+    <%= text_input f, :grupo2, class: "form-control" %>
+  </div>
+
+  <div class="form-group">
+    <label>Grupo3</label>
+    <%= text_input f, :grupo3, class: "form-control" %>
+  </div>
+
+  <div class="form-group">
+    <label>Grupo4</label>
+    <%= text_input f, :grupo4, class: "form-control" %>
+  </div>
+
+
+  <div class="form-group">
+    <%= submit "Sortear", class: "btn btn-primary" %>
+  </div>
+<% end %>

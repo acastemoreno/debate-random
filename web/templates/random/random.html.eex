@@ -1,0 +1,20 @@
+<h2>Result Random</h2>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>1er Gobierno</th>
+      <th>1era Oposicion</th>
+      <th>2do Gobierno</th>
+      <th>2da Oposicion</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+    <%= for grupo <- @newlist do %>
+      <td><%= grupo %></td>
+    <% end %>
+    </tr>
+  </tbody>
+</table>
